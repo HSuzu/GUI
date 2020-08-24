@@ -8,7 +8,6 @@
 #include <memory>
 #include <iostream>
 
-#include "GLDebug.h"
 #include "Hash.h"
 
 template <typename T>
