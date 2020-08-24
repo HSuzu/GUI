@@ -1,3 +1,5 @@
+build/
+
 # Prerequisites
 *.d
 
@@ -30,3 +32,11 @@
 *.exe
 *.out
 *.app
+
+# Qt user files
+*.user
+
+# imgui files
+imgui.ini
+
+
