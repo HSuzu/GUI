@@ -29,7 +29,6 @@ namespace Utils {
         std::size_t operator()(const char *const s) const noexcept
         {
             auto hash = FowlerNollVoHash::hash_bytes(s, std::strlen(s));
-            std::cout << s << " " << hash << "\n";
             return hash;
         }
     };
@@ -41,9 +40,7 @@ namespace Utils {
         std::size_t operator()(const T& obj) const noexcept
         {
             const char *const s = (const char *)&obj;
-            auto hash = FowlerNollVoHash::hash_bytes(s, sizeof(T));
-            std::cout << hash << "\n";
-            return hash;
+            return FowlerNollVoHash::hash_bytes(s, sizeof(T));
         }
     };
 
