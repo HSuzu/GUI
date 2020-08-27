@@ -65,9 +65,9 @@ void Window::pollEvents() const
     glfwPollEvents();
 }
 
-bool Window::shouldClose() const
+bool Window::isOpen() const
 {
-    return glfwWindowShouldClose(_window);
+    return !glfwWindowShouldClose(_window);
 }
 
 GLFWwindow *Window::glWindow()

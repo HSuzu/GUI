@@ -12,4 +12,5 @@ add_executable(UserInterface main.cpp)
 target_link_libraries(UserInterface
     PRIVATE
         gui
+        utils
 )

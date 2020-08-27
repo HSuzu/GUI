@@ -23,11 +23,9 @@ public:
     void updateBuffers() const;
     void pollEvents() const;
 
-    bool shouldClose() const;
+    bool isOpen() const;
 
     GLFWwindow *glWindow();
-
-    operator bool() const { return !shouldClose(); }
 };
 
 #endif // WINDOW_H

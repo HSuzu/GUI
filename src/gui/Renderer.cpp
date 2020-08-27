@@ -1,12 +1,23 @@
 #include "Renderer.h"
 
-Renderer::Renderer() {}
+Renderer::OpenGL::OpenGL() {}
 
-void Renderer::clear() const {
+void Renderer::OpenGL::render(GUI::base_ui &obj)
+{
+    obj.setRenderer(this);
+}
+
+void Renderer::OpenGL::clear() const
+{
     GLCall(glClear(GL_COLOR_BUFFER_BIT));
 }
 
-void Renderer::draw(const VertexArray &va, const IndexBuffer &ib, const Material &m) const
+void Renderer::OpenGL::draw() const
+{
+
+}
+
+void Renderer::OpenGL::draw(const VertexArray &va, const IndexBuffer &ib, const Material &m) const
 {
     m.bind();
     va.bind();
