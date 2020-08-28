@@ -1,6 +1,4 @@
 #include "VertexArray.h"
-#include <GL/glew.h>
-#include "GLDebug.h"
 
 extern "C" {
 #include <stdint.h>

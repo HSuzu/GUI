@@ -1,5 +1,12 @@
+#pragma once
+
 #ifndef INDEX_BUFFER_H
 #define INDEX_BUFFER_H
+
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+
+#include "GLDebug.h"
 
 class IndexBuffer {
 private:

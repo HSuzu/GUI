@@ -1,6 +1,11 @@
 #ifndef VERTEX_BUFFER_H
 #define VERTEX_BUFFER_H
 
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+
+#include "GLDebug.h"
+
 class VertexBuffer {
 private:
     unsigned int _rendererID;

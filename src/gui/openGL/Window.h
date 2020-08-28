@@ -6,7 +6,7 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
-#include "GLDebug.h"
+#include "openGL/GLDebug.h"
 
 class Window
 {

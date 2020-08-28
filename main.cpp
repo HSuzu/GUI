@@ -2,8 +2,8 @@
 #include <functional>
 #include <string>
 
-#include <Window.h>
-#include <Renderer.h>
+#include <openGL/Window.h>
+#include <openGL/OpenGLRenderer.h>
 
 #include <utils/Thread.h>
 
