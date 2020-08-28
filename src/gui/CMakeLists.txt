@@ -20,6 +20,7 @@ target_include_directories(gui INTERFACE
 
 target_link_libraries(gui INTERFACE
     openGLRenderer
+    utils
 
 # vendor
     stb_image

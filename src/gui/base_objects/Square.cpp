@@ -1,4 +1,5 @@
 #include "Square.h"
+#include "utils/gui_utils.h"
 
 namespace GUI {
 
