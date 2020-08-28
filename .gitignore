@@ -35,6 +35,7 @@ build/
 
 # Qt user files
 *.user
+*.autosave
 
 # imgui files
 imgui.ini

@@ -4,6 +4,7 @@ add_library(utils STATIC
     SingletonFile.h
     Hash.h
     HashFunctions.h
+    gui_utils.h
 
 # sources
     timespec.cpp

@@ -29,6 +29,7 @@ namespace GUI {
     public:
         virtual void setRenderer(Renderer::OpenGL *renderer) = 0;
     };
+
 }
 
 #endif

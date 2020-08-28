@@ -4,27 +4,29 @@
 
 #include <openGL/Window.h>
 #include <openGL/OpenGLRenderer.h>
+#include <gui/base_objects/Square.h>
 
 #include <utils/Thread.h>
 
 int main()
 {
+
     Thread::Task::initTaskBuffer();
     Thread::alias("main");
 
     Window window(640, 480, "Title");
     Renderer::OpenGL renderer;
 
-//    GUI::Square square(0,0,100,100);
-//    square.backgroundColor("#0110031");
+    GUI::Square square({0.0f, 0.0f},{100.0f,100.0f});
+    square.backgroundColor("#0110031");
 
-//    renderer << square;
+    renderer << square;
 
     while(window.isOpen())
     {
         renderer.clear();
 
-//        square.setPosition(10,10);
+        square.position(10,10);
 
         renderer.draw();
 

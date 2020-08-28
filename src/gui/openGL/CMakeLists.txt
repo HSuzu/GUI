@@ -23,8 +23,6 @@ add_library(openGLRenderer STATIC
     VertexBuffer.cpp
     OpenGLRenderer.cpp
     Window.cpp
-
-    Square.cpp
 )
 
 # Materials
@@ -41,6 +39,11 @@ add_library(openGLMaterials STATIC
 # resources
     ${SHADERS_FILES}
     ${TEXTURES_FILES}
+)
+
+add_library(openGLObjects STATIC
+# sources
+    objects/Square.cpp
 )
 
 set(THREADS_PREFER_PTHREAD_FLAG ON)
@@ -70,4 +73,5 @@ target_link_libraries(openGLRenderer INTERFACE
     ${MATH_LIBRARY}
 
     openGLMaterials
+    openGLObjects
 )
